@@ -1,6 +1,5 @@
 import streamlit as st
-
-from youtube_transcript_api import YouTubeTranscriptApi
+import youtube_transcript_api
 
 address = st.text_input("Input_youtube_address:")
-st.write(YouTubeTranscriptApi.get_transcript(address))
+st.write(youtube_transcript_api.get_transcript(address))
