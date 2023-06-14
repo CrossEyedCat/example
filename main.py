@@ -5,5 +5,5 @@ address = st.text_input("Input_youtube_address:")
 text = ""
 source = YouTubeTranscriptApi.get_transcript(address, languages=['ru'])
 for i in source:
-    text=text+". "+i['text']
+    text=text+" "+i['text']
 st.write(text)
